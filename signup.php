@@ -40,7 +40,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
 <div class="auth-container">
     <h2>Sign Up</h2>
-    <form action="signup_backend.php" method="POST">
+    <?php if(isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
+    <form action="" method="POST">
         <input type="text" name="name" placeholder="Full Name" required>
         <input type="text" name="contact" placeholder="Email or Phone" required>
         <select name="role" required>

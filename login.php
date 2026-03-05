@@ -42,7 +42,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
 <div class="auth-container">
     <h2>Login</h2>
-    <form action="login_backend.php" method="POST">
+    <?php if(isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
+    <form action="" method="POST">
         <input type="text" name="contact" placeholder="Email or Phone" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>
