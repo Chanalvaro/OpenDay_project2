@@ -48,8 +48,10 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>
     </form>
-    <p>Don't have an account? <a href="signup.php">Sign Up</a></p>
+    <p>Don't have an account? <a href="signup.php">Sign up here</a>.</p>
 </div>
 
 </body>
 </html>
+
+
